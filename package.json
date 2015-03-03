@@ -4,8 +4,7 @@
   "description": "Job Finding App",
   "main": "index.js",
   "scripts": {
-    "test": "karma",
-    "postinstall": "bower install"
+    "test": "karma"
   },
   "keywords": [
     "Job",
