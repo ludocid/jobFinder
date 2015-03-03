@@ -1,0 +1,22 @@
+{
+  "name": "workspace",
+  "version": "0.0.1",
+  "description": "Job Finding App",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma"
+  },
+  "keywords": [
+    "Job",
+    "Finder"
+  ],
+  "author": "ludocid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.1",
+    "jade": "^1.9.2"
+  },
+  "devDependencies": {
+    "bower": "^1.3.12"
+  }
+}
