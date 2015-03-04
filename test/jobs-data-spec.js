@@ -32,10 +32,10 @@ describe('get jobs', function() {
     });
 
     it('It never should have title', function() {
-        expect(jobs[1].title).to.not.be.empty;
+        expect(jobs[0].title).to.not.be.empty;
     });
 
     it('It never should have description', function() {
-        expect(jobs[1].description).to.not.be.empty;
+        expect(jobs[0].description).to.not.be.empty;
     });
 });
