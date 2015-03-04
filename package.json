@@ -4,7 +4,7 @@
   "description": "Job Finding App",
   "main": "index.js",
   "scripts": {
-    "test": "karma"
+    "test": "mocha"
   },
   "keywords": [
     "Job",
@@ -13,11 +13,13 @@
   "author": "ludocid",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^2.9.13",
     "express": "^4.12.1",
     "jade": "^1.9.2",
     "mongoose": "^3.8.24"
   },
   "devDependencies": {
-    "bower": "^1.3.12"
+    "bower": "^1.3.12",
+    "chai": "^2.1.0"
   }
 }
