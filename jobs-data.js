@@ -30,10 +30,11 @@ var seedJobs = function() {
                 });
             }
         });
-}
+};
 
 module.exports = {
     connectDB: Promise.promisify(mongoose.connect, mongoose),
     findJobs: findJobs,
-    seedJobs: seedJobs
+    seedJobs: seedJobs,
+    saveJob: createJob
 };

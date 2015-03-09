@@ -4,8 +4,8 @@ var expect = require('chai').expect;
 var request = require('supertest');
 var Promise = require('bluebird');
 var app = express();
-var db = require('./db');
-var jobsService = require('../jobs-service')(db, app);
+var db = require('../db');
+var jobsService = require('../../jobs-service')(db, app);
 
 var dataSavedJob;
 describe('save job', function() {
