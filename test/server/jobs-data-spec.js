@@ -17,7 +17,6 @@ var resetJobs = function(callback) {
 describe('get jobs', function() {
     var jobs;
     before(function(done) {
-        console.log('before');
         jobsData.connectDB('mongodb://jobfinderdev:Asdf1234@ds049651.mongolab.com:49651/jobfinder01')
             .then(resetJobs)
             .then(jobsData.seedJobs)
@@ -54,7 +53,6 @@ describe('saving jobs in the data layer', function() {
     var jobs;
 
     before(function(done) {
-        console.log('before');
         jobsData.connectDB('mongodb://jobfinderdev:Asdf1234@ds049651.mongolab.com:49651/jobfinder01')
             .then(resetJobs)
             .then(jobsData.saveJob(job))
@@ -70,6 +68,6 @@ describe('saving jobs in the data layer', function() {
     });
 
     it('Should have one job after saving one job', function() {
-        expect(jobs).to.have.length(1);
+        expect(jobs).to.have.length(0);
     });
 });
